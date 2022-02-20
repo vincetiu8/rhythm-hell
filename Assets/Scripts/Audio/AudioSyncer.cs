@@ -5,7 +5,7 @@ namespace Audio
 {
     public abstract class AudioSyncer : MonoBehaviour
     {
-        private readonly float[] _biasIntervals = { 20f, 30f, 40f, 50f, 60f, 70f };
+        private readonly float[] _biasIntervals = { 25f, 35f, 45f, 55f, 65f, 75f };
         private const float TimeBetweenBeats = 0.05f;
 
         [SerializeField] private FFTWindow fftWindow;

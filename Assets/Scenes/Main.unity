@@ -1403,6 +1403,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7947636920309639719, guid: ed9d286129db0052cac506e08050d37a, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 7947636920309639719, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: countdownText
       value: 
       objectReference: {fileID: 222610637}
