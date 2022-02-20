@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="">
+    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="fix spawners">
       <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/CircleBullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/CircleBullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Circle Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Circle Bullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Square Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Square Bullet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Triangle Bullet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/Triangle Bullet.prefab.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/SpreadshotSpawner.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/SpreadshotSpawner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Direct Shot Spawner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Direct Shot Spawner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Spreadshot Spawner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Spreadshot Spawner.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Vertical Shot Spawner.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Spawners/Vertical Shot Spawner.prefab.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/DirectShotController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/DirectShotController.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/ShooterController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/ShooterController.cs.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpreadshotController.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpreadshotController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotController.cs.meta" afterDir="false" />
     <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="added graphics to main menu">
       <change afterPath="$PROJECT_DIR$/Assets/Sprites/HowToPlayButton.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Sprites/HowToPlayButton.png.meta" afterDir="false" />
@@ -139,7 +149,7 @@
       <workItem from="1645362637252" duration="1800000" />
       <workItem from="1645365778868" duration="1546000" />
       <workItem from="1645375127927" duration="674000" />
-      <workItem from="1645377873215" duration="346000" />
+      <workItem from="1645377873215" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1645333528984</created>
@@ -169,6 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645364957612</updated>
     </task>
+    <task id="LOCAL-00005" summary="fix spawners">
+      <created>1645378516048</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645378516048</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <task id="LOCAL-00005" summary="misspelled">
       <created>1645376145845</created>
       <option name="number" value="00005" />
@@ -214,5 +232,7 @@
     <MESSAGE value="misspelled" />
     <MESSAGE value="added graphics to main menu" />
     <option name="LAST_COMMIT_MESSAGE" value="added graphics to main menu" />
+    <MESSAGE value="fix spawners" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix spawners" />
   </component>
 </project>

@@ -1,4 +1,5 @@
 using System;
+using Player;
 using UnityEngine;
 
 namespace Enemy
@@ -16,10 +17,10 @@ namespace Enemy
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            // 3 is player layer
+            if (!other.gameObject.CompareTag("Player")) return;
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth == null) return;
             playerHealth.ChangeHealth(-damage);
+            Destroy(gameObject);
         }
     }
 }
