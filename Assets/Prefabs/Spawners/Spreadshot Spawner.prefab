@@ -111,9 +111,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fftWindow: 2
-  bias: 0.1
-  timeBetweenBeats: 0.05
-  projectilePrefab: {fileID: 3627365827572627024, guid: e6ec261b395f28942900ba06dd728bd0, type: 3}
-  bulletVelocity: 2.5
+  projectilePrefabs:
+  - {fileID: 3465902375732136185, guid: 1dc6f0c5c169c9707836d37c886285c6, type: 3}
+  - {fileID: 7637429184918061341, guid: 51771bed0ff899c939ab7c4b7a0f8c63, type: 3}
+  - {fileID: 7677154067618144499, guid: 5a60e3bc518e768cbbbe4bbafbd5666a, type: 3}
+  - {fileID: 2972824395880890377, guid: 4970d784313430a1cb8e24d58fe48e84, type: 3}
+  - {fileID: 2972824395880890377, guid: 9542aea13ad99107a90f51e4cb1cc82a, type: 3}
+  - {fileID: 2972824395880890377, guid: c09b13ba94ed1f027b17306e35b2a900, type: 3}
+  bulletVelocities:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
   bulletAmount: 10
   spread: 180

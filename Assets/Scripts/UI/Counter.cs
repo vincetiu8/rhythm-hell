@@ -1,35 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Counter : MonoBehaviour
+namespace UI
 {
-    private float secondsLasted;
-    public static Counter CounterInstance;    
+    public class Counter : MonoBehaviour
+    {
+        private float _secondsLasted;
+        public static Counter CounterInstance;    
     
-    private void Awake()
-    {
-        CounterInstance = this;
-        secondsLasted = 0;
-    }
+        private void Awake()
+        {
+            CounterInstance = this;
+            _secondsLasted = 0;
+        }
 
-    private void Increment()
-    {
-        secondsLasted++;
-    }
+        private void Increment()
+        {
+            _secondsLasted++;
+        }
 
-    private void Start()
-    {
-        InvokeRepeating("Increment", 0, 1);
-    }
+        private void Start()
+        {
+            InvokeRepeating("Increment", 0, 1);
+        }
 
-    public void StopIncrement()
-    {
-        CancelInvoke();
-    }
+        public void StopIncrement()
+        {
+            CancelInvoke();
+        }
 
-    public float GetTime()
-    {
-        return secondsLasted / 60f;
+        public float GetTime()
+        {
+            return _secondsLasted / 60f;
+        }
     }
 }

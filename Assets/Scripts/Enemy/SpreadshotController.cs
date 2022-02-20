@@ -8,16 +8,14 @@ namespace Enemy
         [SerializeField] private int bulletAmount = 10;
         [SerializeField] private float spread = 180f;
 
-        protected override void OnBeat()
+        protected override void OnBeat(int beatPower)
         {
-            base.OnBeat();
-
             float angle = GetPlayerAngle() - spread / 2;
             float interval = spread / (bulletAmount - 1);
 
             for (int i = 0; i < bulletAmount; i++)
             {
-                FireBullet(angle);
+                FireBullet(angle, beatPower);
                 angle += interval;
             }
         }

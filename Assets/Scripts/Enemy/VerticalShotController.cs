@@ -4,11 +4,9 @@ namespace Enemy
 {
     public class VerticalShotController : ShooterController
     {
-        protected override void OnBeat()
+        protected override void OnBeat(int beatPower)
         {
-            base.OnBeat();
-            
-            FireBullet(Player.transform.position.y > transform.position.y ? 90 : 270);
+            FireBullet(Player.transform.position.y > transform.position.y ? 90 : 270, beatPower);
         }
     }
 }

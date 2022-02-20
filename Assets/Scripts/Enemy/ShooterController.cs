@@ -6,8 +6,8 @@ namespace Enemy
 {
     public abstract class ShooterController : AudioSyncer
     {
-        [SerializeField] protected GameObject projectilePrefab;
-        [SerializeField] protected float bulletVelocity = 2.5f;
+        [SerializeField] protected GameObject[] projectilePrefabs = new GameObject[6];
+        [SerializeField] protected float[] bulletVelocities = new float[6];
 
         protected Transform Player;
 
@@ -27,13 +27,13 @@ namespace Enemy
             return Mathf.Atan2(playerDirection.y, playerDirection.x) * Mathf.Rad2Deg;
         }
 
-        protected void FireBullet(float angle)
+        protected void FireBullet(float angle, int beatPower)
         {
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            GameObject projectile = Instantiate(projectilePrefabs[beatPower], transform.position, Quaternion.identity);
 
             float directionX = Mathf.Cos(angle * Mathf.Deg2Rad);
             float directionY = Mathf.Sin(angle * Mathf.Deg2Rad);
-            Vector2 velocity = new Vector2(directionX, directionY) * bulletVelocity;
+            Vector2 velocity = new Vector2(directionX, directionY) * bulletVelocities[beatPower];
             projectile.GetComponent<Rigidbody2D>().velocity = velocity;
             projectile.GetComponent<Rigidbody2D>().rotation = angle;
         }
