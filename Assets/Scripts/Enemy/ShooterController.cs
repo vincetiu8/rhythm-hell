@@ -1,6 +1,7 @@
 using System;
 using Audio;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Enemy
 {

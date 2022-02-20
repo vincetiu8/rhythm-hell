@@ -1158,10 +1158,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4532226816452576501, guid: ed9d286129db0052cac506e08050d37a, type: 3}
-      propertyPath: m_audioClip
+    - target: {fileID: 1736988870895253670, guid: ed9d286129db0052cac506e08050d37a, type: 3}
+      propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 8300000, guid: a2b24478cc71199f384758aea9aa396b, type: 3}
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 4169855146843341628, guid: ed9d286129db0052cac506e08050d37a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 6742481487141277269, guid: ed9d286129db0052cac506e08050d37a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 7947636920309639714, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: m_Name
       value: GameManager
