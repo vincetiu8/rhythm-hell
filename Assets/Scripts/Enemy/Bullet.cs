@@ -1,39 +1,25 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+namespace Enemy
 {
-    private Vector2 _direction;
-    [SerializeField] private float speed;
-    [SerializeField] private int damage;
-
-    private void OnEnable()
+    public class Bullet : MonoBehaviour
     {
-        Invoke("ResetBullet", 3f);
-    }
+        [SerializeField] private int damage;
 
-    private void Update()
-    {
-        transform.Translate(_direction * speed * Time.deltaTime);
-    }
+        [SerializeField] private float lifetime;
 
-    public void SetDirection(Vector2 direction)
-    {
-        _direction = direction;
-    }
+        private void Start()
+        {
+            Destroy(gameObject, lifetime);
+        }
 
-    private void ResetBullet()
-    {
-        gameObject.SetActive(false);
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        // 3 is player layer
-        PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-        if (playerHealth == null) return;
-        playerHealth.ChangeHealth(-damage);
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            // 3 is player layer
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth == null) return;
+            playerHealth.ChangeHealth(-damage);
+        }
     }
 }

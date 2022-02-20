@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enemy;
 using UnityEngine;
 
 public class VerticalShotFire : MonoBehaviour
@@ -30,7 +31,7 @@ public class VerticalShotFire : MonoBehaviour
             GameObject bulletSpawn = GetComponentInChildren<BulletStorage>().GetBullet();
             bulletSpawn.transform.position = transform.position;
             bulletSpawn.SetActive(true);
-            bulletSpawn.GetComponent<Bullet>().SetDirection(bulletDirection);
+            //bulletSpawn.GetComponent<Bullet>().SetDirection(bulletDirection);
         }
     }
 } 

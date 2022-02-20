@@ -5,7 +5,7 @@ namespace Audio
 {
     public class AudioSyncer : MonoBehaviour
     {
-        [SerializeField] private AudioSpectrum audioSpectrum;
+        [SerializeField] private FFTWindow fftWindow;
         [SerializeField] private float bias;
         [SerializeField] private float timeBetweenBeats;
 
@@ -16,7 +16,7 @@ namespace Audio
         protected virtual void Update()
         {
             _previousAudioValue = _audioValue;
-            _audioValue = audioSpectrum.spectrumValue;
+            _audioValue = AudioSpectrum.SpectrumValues[fftWindow];
 
             if (_previousAudioValue > bias != _audioValue > bias)
             {

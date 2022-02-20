@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782367}
+  fftWindow: 5
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782367}
+  fftWindow: 5
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782372}
+  fftWindow: 3
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782370}
+  fftWindow: 4
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782374}
+  fftWindow: 1
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782371}
+  fftWindow: 0
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782371}
+  fftWindow: 0
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782367}
+  fftWindow: 5
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782370}
+  fftWindow: 4
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782367}
+  fftWindow: 5
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782374}
+  fftWindow: 1
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1444,7 +1444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782373}
+  fftWindow: 2
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782372}
+  fftWindow: 3
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782370}
+  fftWindow: 4
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1750,7 +1750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782371}
+  fftWindow: 0
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782373}
+  fftWindow: 2
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -1954,7 +1954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782367}
+  fftWindow: 5
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2056,7 +2056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782374}
+  fftWindow: 1
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2158,7 +2158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782374}
+  fftWindow: 1
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782370}
+  fftWindow: 4
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782374}
+  fftWindow: 1
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2431,11 +2431,6 @@ GameObject:
   - component: {fileID: 1126782369}
   - component: {fileID: 1126782368}
   - component: {fileID: 1126782371}
-  - component: {fileID: 1126782374}
-  - component: {fileID: 1126782373}
-  - component: {fileID: 1126782372}
-  - component: {fileID: 1126782370}
-  - component: {fileID: 1126782367}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -2443,20 +2438,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1126782367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126782366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 5
 --- !u!82 &1126782368
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2567,20 +2548,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1126782370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126782366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 4
 --- !u!114 &1126782371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2593,50 +2560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 0
---- !u!114 &1126782372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126782366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 3
---- !u!114 &1126782373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126782366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 2
---- !u!114 &1126782374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126782366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dfdcf2eba73878796db646ffbb2035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spectrumValue: 0
-  _fftWindow: 1
 --- !u!1 &1311763634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +2604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782372}
+  fftWindow: 3
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2783,7 +2706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782372}
+  fftWindow: 3
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2885,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782372}
+  fftWindow: 3
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -2987,7 +2910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782373}
+  fftWindow: 2
   bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -3089,7 +3012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782371}
+  fftWindow: 0
   bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -3191,7 +3114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782373}
+  fftWindow: 2
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -3293,7 +3216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782371}
+  fftWindow: 0
   bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -3431,7 +3354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782370}
+  fftWindow: 4
   bias: 10
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
@@ -3533,7 +3456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232f29c78c46d290da0fda6c55aee589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSpectrum: {fileID: 1126782373}
+  fftWindow: 2
   bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}

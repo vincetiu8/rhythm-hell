@@ -1,41 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using Audio;
 using UnityEngine;
 
-public class SpreadshotFire : MonoBehaviour
+namespace Enemy
 {
-    [SerializeField] private int bulletAmount;
-
-    [SerializeField] private float startAngle = 90f;
-    [SerializeField] private float endAngle = 270f;
-    [SerializeField] private float fireRate = 0.5f;
-
-    private Vector2 _bulletDirection;
-
-    private void Start()
+    public class SpreadshotFire : TargetedShooter
     {
-        InvokeRepeating("SpreadFire", 0f, fireRate);
-    }
+        [SerializeField] private GameObject projectilePrefab;
+        [SerializeField] private int bulletAmount;
+        [SerializeField] private float spread = 180f;
+        [SerializeField] private float bulletVelocity = 2.5f;
 
-    private void SpreadFire()
-    {
-        float interval = (endAngle - startAngle) / bulletAmount;
-        float angle = startAngle;
-
-        for (int i = 0; i < bulletAmount + 1; i++)
+        protected override void OnBeat()
         {
-            float directionX = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180f);
-            float directionY = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180f);
+            base.OnBeat();
 
-            Vector3 movementVector = new Vector3(directionX, directionY, 0f);
-            Vector2 bulletDirection = (movementVector - transform.position).normalized;
+            Vector2 direction = GetPlayerDirection();
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - spread / 2;
+            float interval = spread / (bulletAmount - 1);
 
-            GameObject bulletSpawn = GetComponentInChildren<BulletStorage>().GetBullet();
-            bulletSpawn.transform.position = transform.position;
-            bulletSpawn.SetActive(true);
-            bulletSpawn.GetComponent<Bullet>().SetDirection(bulletDirection);
+            for (int i = 0; i < bulletAmount; i++)
+            {
+                GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
-            angle += interval;
+                float directionX = Mathf.Cos(angle * Mathf.Deg2Rad);
+                float directionY = Mathf.Sin(angle * Mathf.Deg2Rad);
+                Vector2 velocity = new Vector2(directionX, directionY) * bulletVelocity;
+                projectile.GetComponent<Rigidbody2D>().velocity = velocity;
+                projectile.GetComponent<Rigidbody2D>().rotation = angle;
+                angle += interval;
+            }
         }
     }
 }
