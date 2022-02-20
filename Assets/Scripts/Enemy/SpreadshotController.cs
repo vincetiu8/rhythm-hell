@@ -10,7 +10,7 @@ namespace Enemy
 
         protected override void OnBeat(int beatPower)
         {
-            float angle = GetPlayerAngle() - spread / 2;
+            float angle = 180;
             float interval = spread / (bulletAmount - 1);
 
             for (int i = 0; i < bulletAmount; i++)
