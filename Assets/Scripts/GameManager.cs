@@ -1,19 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Enemy;
 using TMPro;
+using UI;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private int countdownTime;
     [SerializeField] private TMP_Text countdownText;
-    [SerializeField] private Camera cam;
+    [SerializeField] private GameObject winPrefab;
+    [SerializeField] private Text winText;
+    [SerializeField] private GameObject playerPrefab;
 
     private ShooterController[] _shooterControllers;
     private AudioSource _audioSource;
     private Vector2 _cameraDimensions;
+    private bool _songStarted = false;
 
     private void Awake()
     {
@@ -22,13 +28,10 @@ public class GameManager : MonoBehaviour
 
         _audioSource = GetComponentInChildren<AudioSource>();
         _audioSource.Stop();
-    }
 
-    private void Start()
-    {
         _cameraDimensions =
-            new Vector2(cam.orthographicSize * cam.aspect, cam.orthographicSize);
-        GameObject c = new GameObject
+            new Vector2(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize);
+        GameObject child = new GameObject
         {
             transform =
             {
@@ -36,7 +39,7 @@ public class GameManager : MonoBehaviour
             },
             layer = LayerMask.NameToLayer("Bullets")
         };
-        BoxCollider2D box = c.AddComponent<BoxCollider2D>();
+        BoxCollider2D box = child.AddComponent<BoxCollider2D>();
         box.size = new Vector2((_cameraDimensions.x + 1) * 2, 1);
         box.offset = new Vector2(0, _cameraDimensions.y + 0.5f);
         box = gameObject.AddComponent<BoxCollider2D>();
@@ -48,7 +51,11 @@ public class GameManager : MonoBehaviour
         box = gameObject.AddComponent<BoxCollider2D>();
         box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
         box.offset = new Vector2(-_cameraDimensions.x - 0.5f, 0);
-        
+        Debug.Break();
+    }
+
+    private void Start()
+    {
         GameObject empty = GameObject.FindGameObjectWithTag("Song");
         if (empty != null)
         {
@@ -67,6 +74,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (!_audioSource.isPlaying && _songStarted)
+        {
+            winPrefab.SetActive(true);
+            Counter.CounterInstance.StopIncrement();
+            winText.text = Counter.CounterInstance.GetTime().ToString();
+            Destroy(playerPrefab);
+        }
+    }
+
     private IEnumerator Countdown()
     {
         float timer = countdownTime;
@@ -81,6 +99,7 @@ public class GameManager : MonoBehaviour
         countdownText.gameObject.SetActive(false);
         ToggleSpawners(true);
         _audioSource.Play();
+        _songStarted = true;
     }
 
     private void ToggleSpawners(bool toggle)
