@@ -7,12 +7,11 @@ namespace Enemy
     public class Bullet : MonoBehaviour
     {
         [SerializeField] private int damage;
-
         [SerializeField] private float lifetime;
 
         private void Start()
         {
-            Destroy(gameObject, lifetime);
+            Invoke(nameof(Destroy), lifetime);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -20,6 +19,11 @@ namespace Enemy
             if (!other.gameObject.CompareTag("Player")) return;
             PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
             playerHealth.ChangeHealth(-damage);
+            Destroy(gameObject);
+        }
+
+        protected virtual void Destroy()
+        {
             Destroy(gameObject);
         }
     }

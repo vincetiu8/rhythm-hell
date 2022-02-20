@@ -28,6 +28,14 @@ public class GameManager : MonoBehaviour
         _audioSource.clip = empty.GetComponent<AudioSource>().clip;
         Destroy(empty);
         StartCoroutine(Countdown());
+
+        foreach (Transform child in transform)
+        {
+            if (child.CompareTag("Spawner"))
+            {
+                child.position = new Vector3(0, Camera.main.orthographicSize);
+            }
+        }
     }
 
     private IEnumerator Countdown()
