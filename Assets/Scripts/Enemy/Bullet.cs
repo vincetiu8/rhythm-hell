@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
 {
     private Vector2 _direction;
     [SerializeField] private float speed;
+    [SerializeField] private int damage;
 
     private void OnEnable()
     {
@@ -26,5 +27,13 @@ public class Bullet : MonoBehaviour
     private void ResetBullet()
     {
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // 3 is player layer
+        PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+        if (playerHealth == null) return;
+        playerHealth.ChangeHealth(-damage);
     }
 }

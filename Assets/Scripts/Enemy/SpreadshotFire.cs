@@ -8,12 +8,13 @@ public class SpreadshotFire : MonoBehaviour
 
     [SerializeField] private float startAngle = 90f;
     [SerializeField] private float endAngle = 270f;
+    [SerializeField] private float fireRate = 0.5f;
 
     private Vector2 _bulletDirection;
 
     private void Start()
     {
-        InvokeRepeating("SpreadFire", 0f, 2f);
+        InvokeRepeating("SpreadFire", 0f, fireRate);
     }
 
     private void SpreadFire()
