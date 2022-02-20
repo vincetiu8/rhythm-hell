@@ -18,7 +18,6 @@ namespace Player
 
         private void FixedUpdate()
         {
-            Debug.Log(_movementDirection * accelerationAmount);
             _rigidbody2D.AddForce(_movementDirection * accelerationAmount);
         }
 
