@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
         box = gameObject.AddComponent<BoxCollider2D>();
         box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
         box.offset = new Vector2(-_cameraDimensions.x - 0.5f, 0);
-        Debug.Break();
     }
 
     private void Start()
