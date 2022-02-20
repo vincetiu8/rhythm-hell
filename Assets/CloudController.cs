@@ -1,0 +1,49 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Random = UnityEngine.Random;
+
+public class CloudController : MonoBehaviour
+{
+    [SerializeField] private Sprite[] cloudSprites;
+    [SerializeField] private float minOpacity, maxOpacity;
+    [SerializeField] private float minSize, maxSize;
+    [SerializeField] private float minFallSpeed, maxFallSpeed;
+
+    private SpriteRenderer _spriteRenderer;
+    private Vector2 _cameraSize;
+    private float _fallSpeed;
+
+    private void Awake()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _cameraSize = new Vector2(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize);
+    }
+
+    private void Start()
+    {
+        RandomizeCloud();
+        transform.position = new Vector3(transform.position.x, Random.Range(-_cameraSize.y, _cameraSize.y), 0);
+    }
+
+    private void Update()
+    {
+        transform.position -= Vector3.up * _fallSpeed * Time.deltaTime;
+
+    if (transform.position.y < -_cameraSize.y - 5)
+        {
+            RandomizeCloud();
+        }
+    }
+
+    private void RandomizeCloud()
+    {
+        transform.position = new Vector2(Random.Range(-_cameraSize.x, _cameraSize.x), _cameraSize.y + 5);
+        _spriteRenderer.sprite = cloudSprites[Random.Range(0, cloudSprites.Length)];
+        _spriteRenderer.color = new Color(1, 1, 1, Random.Range(minOpacity, maxOpacity));
+        transform.localScale = Vector3.one * Random.Range(minSize, maxSize);
+        _fallSpeed = Random.Range(minFallSpeed, maxFallSpeed);
+        transform.rotation = Quaternion.AngleAxis(Random.Range(0, 360f), Vector3.forward);
+    }
+}
