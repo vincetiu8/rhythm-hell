@@ -23,15 +23,22 @@ public class CloudController : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(Hide());
+    }
+
+    private IEnumerator Hide()
+    {
+        _spriteRenderer.sprite = null;
+        yield return new WaitForSeconds(Random.Range(0f, 5f));
+
         RandomizeCloud();
-        transform.position = new Vector3(transform.position.x, Random.Range(-_cameraSize.y, _cameraSize.y), 0);
     }
 
     private void Update()
     {
         transform.position -= Vector3.up * _fallSpeed * Time.deltaTime;
 
-    if (transform.position.y < -_cameraSize.y - 5)
+        if (transform.position.y < -_cameraSize.y - 5)
         {
             RandomizeCloud();
         }
