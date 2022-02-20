@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="add options menu" />
+    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="fix buttons">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/StartMenuController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Menus/StartMenuController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/Options Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/Options Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/Start Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/Start Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +79,7 @@
       <updated>1645333374695</updated>
       <workItem from="1645333387746" duration="389000" />
       <workItem from="1645348824639" duration="3373000" />
-      <workItem from="1645362637252" duration="1487000" />
+      <workItem from="1645362637252" duration="1800000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1645333528984</created>
@@ -94,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645364599905</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix buttons">
+      <created>1645364957612</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1645364957612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +135,7 @@
     <MESSAGE value="add gitignore" />
     <MESSAGE value="set up unity project" />
     <MESSAGE value="add options menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="add options menu" />
+    <MESSAGE value="fix buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix buttons" />
   </component>
 </project>
