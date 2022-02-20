@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3860238152082112765}
   - component: {fileID: -4132160385794081440}
   - component: {fileID: 4178121221610143390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Circle Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  lifetime: 7.5
+  lifetime: 5
 --- !u!212 &3860238152082112765
 SpriteRenderer:
   m_ObjectHideFlags: 0

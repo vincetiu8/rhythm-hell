@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -4132160385794081440}
   - component: {fileID: 4178121221610143390}
   - component: {fileID: -1810452558666986117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pentagon Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,4 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  lifetime: 2.5
+  lifetime: 2

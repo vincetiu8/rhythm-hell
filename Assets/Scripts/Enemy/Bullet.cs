@@ -16,9 +16,11 @@ namespace Enemy
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!other.gameObject.CompareTag("Player")) return;
-            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            playerHealth.ChangeHealth(-damage);
+            if (other.gameObject.CompareTag("Player"))
+            {
+                PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+                playerHealth.ChangeHealth(-damage);
+            }
             Destroy(gameObject);
         }
 

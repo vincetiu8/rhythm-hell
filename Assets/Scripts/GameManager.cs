@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     private ShooterController[] _shooterControllers;
     private AudioSource _audioSource;
+    private Vector2 _cameraDimensions;
 
     private void Awake()
     {
@@ -20,20 +21,48 @@ public class GameManager : MonoBehaviour
 
         _audioSource = GetComponentInChildren<AudioSource>();
         _audioSource.Stop();
+
+        _cameraDimensions =
+            new Vector2(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize);
+        GameObject child = new GameObject
+        {
+            transform =
+            {
+                parent = transform
+            },
+            layer = LayerMask.NameToLayer("Bullets")
+        };
+        BoxCollider2D box = child.AddComponent<BoxCollider2D>();
+        box.size = new Vector2((_cameraDimensions.x + 1) * 2, 1);
+        box.offset = new Vector2(0, _cameraDimensions.y + 0.5f);
+        box = gameObject.AddComponent<BoxCollider2D>();
+        box.size = new Vector2((_cameraDimensions.x + 1) * 2, 1);
+        box.offset = new Vector2(0, - _cameraDimensions.y - 0.5f);
+        box= gameObject.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
+        box.offset = new Vector2(_cameraDimensions.x + 0.5f, 0);
+        box = gameObject.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
+        box.offset = new Vector2(-_cameraDimensions.x - 0.5f, 0);
+        Debug.Break();
     }
 
     private void Start()
     {
         GameObject empty = GameObject.FindGameObjectWithTag("Song");
-        _audioSource.clip = empty.GetComponent<AudioSource>().clip;
-        Destroy(empty);
+        if (empty != null)
+        {
+            _audioSource.clip = empty.GetComponent<AudioSource>().clip;
+            Destroy(empty);
+        }
+
         StartCoroutine(Countdown());
 
         foreach (Transform child in transform)
         {
             if (child.CompareTag("Spawner"))
             {
-                child.position = new Vector3(0, Camera.main.orthographicSize);
+                child.position = new Vector3(0, _cameraDimensions.y);
             }
         }
     }

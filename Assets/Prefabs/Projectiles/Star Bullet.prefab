@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3627365827572627026}
   - component: {fileID: 3860238152082112765}
   - component: {fileID: -4132160385794081440}
-  - component: {fileID: 4178121221610143390}
-  - component: {fileID: -5802433301618076633}
+  - component: {fileID: 6088213952592132107}
+  - component: {fileID: 2066987848}
   m_Layer: 6
-  m_Name: Pentagon Bullet
+  m_Name: Star Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1695869659228913671, guid: 4e20ab9f5ef03afad8aecf43557cc45a, type: 3}
+  m_Sprite: {fileID: -2305904551984290597, guid: 4e20ab9f5ef03afad8aecf43557cc45a, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,21 +93,21 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3627365827572627024}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!58 &4178121221610143390
-CircleCollider2D:
+  m_Constraints: 0
+--- !u!60 &6088213952592132107
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,9 +120,72 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.99
---- !u!114 &-5802433301618076633
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.08, y: 1.98}
+    newSize: {x: 2.26, y: 1.97}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13, y: -0.69}
+      - {x: 0.16, y: -0.57}
+      - {x: 0.17999999, y: -0.53999996}
+      - {x: 0.21, y: -0.45999998}
+      - {x: 0.26, y: -0.31}
+      - {x: 0.28, y: -0.26}
+      - {x: 0.69, y: -0.26}
+      - {x: 0.7, y: -0.25}
+      - {x: 1.03, y: -0.25}
+      - {x: 1.04, y: -0.24}
+      - {x: 1.04, y: -0.19999999}
+      - {x: 0.78, y: -0.01}
+      - {x: 0.75, y: 0.02}
+      - {x: 0.66999996, y: 0.08}
+      - {x: 0.58, y: 0.14}
+      - {x: 0.5, y: 0.21}
+      - {x: 0.44, y: 0.26999998}
+      - {x: 0.45999998, y: 0.31}
+      - {x: 0.5, y: 0.44}
+      - {x: 0.59, y: 0.74}
+      - {x: 0.64, y: 0.90999997}
+      - {x: 0.65999997, y: 0.98999995}
+      - {x: 0.61, y: 0.98999995}
+      - {x: 0.5, y: 0.91999996}
+      - {x: 0, y: 0.57}
+      - {x: -0.11, y: 0.65}
+      - {x: -0.19, y: 0.7}
+      - {x: -0.59, y: 0.98999995}
+      - {x: -0.65999997, y: 0.98999995}
+      - {x: -0.64, y: 0.88}
+      - {x: -0.57, y: 0.69}
+      - {x: -0.56, y: 0.65999997}
+      - {x: -0.53999996, y: 0.59}
+      - {x: -0.53, y: 0.56}
+      - {x: -0.51, y: 0.48999998}
+      - {x: -0.48, y: 0.39}
+      - {x: -0.44, y: 0.25}
+      - {x: -0.59999996, y: 0.13}
+      - {x: -0.71999997, y: 0.03}
+      - {x: -0.81, y: -0.03}
+      - {x: -0.93, y: -0.13}
+      - {x: -1.04, y: -0.22}
+      - {x: -1.03, y: -0.25}
+      - {x: -0.7, y: -0.25}
+      - {x: -0.69, y: -0.26}
+      - {x: -0.26999998, y: -0.26}
+      - {x: -0.22, y: -0.41}
+      - {x: -0.13, y: -0.66999996}
+      - {x: -0.049999997, y: -0.9}
+      - {x: 0, y: -0.98999995}
+      - {x: 0.03, y: -0.97999996}
+      - {x: 0.04, y: -0.94}
+      - {x: 0.08, y: -0.81}
+      - {x: 0.099999994, y: -0.77}
+--- !u!114 &2066987848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,11 +194,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3627365827572627024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5fa96e55b094ec79cd3b991b63a01b1, type: 3}
+  m_Script: {fileID: 11500000, guid: b1f1538f245640c79979708d1aaf90ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  lifetime: 2.5
-  childBulletPrefab: {fileID: 3627365827572627024, guid: dcd6f3c9276f5cc96b2601ba0a2a6747, type: 3}
-  childBulletCount: 5
-  childBulletVelocity: 10
+  lifetime: 5
+  maxTurnSpeed: 360
