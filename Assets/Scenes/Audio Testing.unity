@@ -270,12 +270,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782367}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &112557135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -372,12 +372,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782372}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &125225421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132869574}
   m_Layer: 0
-  m_Name: 65
+  m_Name: 46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,7 +475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 134467685}
   m_Layer: 0
-  m_Name: 40
+  m_Name: 34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -546,12 +546,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782370}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &134654194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -648,12 +648,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782374}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &161026030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -935,12 +935,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782371}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &423958145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1037,12 +1037,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782367}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &476430906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1139,12 +1139,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782370}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &528294875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1241,12 +1241,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782367}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &537130494
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1343,12 +1343,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782374}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &682557757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1445,12 +1445,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782373}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &696389060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1547,12 +1547,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782372}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &711653415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1649,12 +1649,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782370}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &802211975
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1751,12 +1751,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782371}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &910113354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1853,12 +1853,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782373}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &955381460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1955,12 +1955,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782367}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &971630647
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2159,12 +2159,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782374}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &987732014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2261,12 +2261,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782370}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &1001839041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2363,12 +2363,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782374}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &1126009661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2467,7 +2467,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 8b4890112df0e7e669e9af65a3667a10, type: 2}
-  m_audioClip: {fileID: 8300000, guid: a2b24478cc71199f384758aea9aa396b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 77b2be9cb7300ca45b92ce249428067d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2682,12 +2682,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782372}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &1311763637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2784,12 +2784,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782372}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &1403164076
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2988,12 +2988,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782373}
-  bias: 80
+  bias: 58
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.1
-  restSmoothTime: 0.8
+  restSmoothTime: 0.58
 --- !u!212 &1616048797
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3090,12 +3090,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782371}
-  bias: 65
+  bias: 46
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.65
+  restSmoothTime: 0.46
 --- !u!212 &1677100066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3294,12 +3294,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782371}
-  bias: 32
+  bias: 22
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.25
+  restSmoothTime: 0.22
 --- !u!212 &1790174351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3361,7 +3361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1855319869}
   m_Layer: 0
-  m_Name: 25
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3534,12 +3534,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSpectrum: {fileID: 1126782373}
-  bias: 40
+  bias: 34
   timeBetweenBeats: 0
   beatScale: {x: 1, y: 1, z: 1}
   restScale: {x: 0.5, y: 0.5, z: 1}
   beatSmoothTime: 0.05
-  restSmoothTime: 0.4
+  restSmoothTime: 0.34
 --- !u!212 &1991826164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3637,7 +3637,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2108302557}
   m_Layer: 0
-  m_Name: 80
+  m_Name: 58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
