@@ -5,12 +5,9 @@ namespace Audio
 {
     public class AudioSyncer : MonoBehaviour
     {
-        public float bias;
-        public float timeStep;
-        public float timeToBeat;
-        public float restSmoothTime;
-
-        protected bool IsBeat;
+        [SerializeField] private AudioSpectrum audioSpectrum;
+        [SerializeField] private float bias;
+        [SerializeField] private float timeBetweenBeats;
 
         private float _previousAudioValue;
         private float _audioValue;
@@ -19,10 +16,11 @@ namespace Audio
         protected virtual void Update()
         {
             _previousAudioValue = _audioValue;
-            _audioValue = AudioSpectrum.SpectrumValue;
+            _audioValue = audioSpectrum.spectrumValue;
+
             if (_previousAudioValue > bias != _audioValue > bias)
             {
-                if (_timer > timeStep)
+                if (_timer > timeBetweenBeats)
                 {
                     OnBeat();
                 }
@@ -31,11 +29,9 @@ namespace Audio
             _timer += Time.deltaTime;
         }
 
-        public virtual void OnBeat()
+        protected virtual void OnBeat()
         {
-            Debug.Log("Beat");
             _timer = 0;
-            IsBeat = true;
         }
     }
 }

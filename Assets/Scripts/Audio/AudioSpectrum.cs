@@ -3,9 +3,12 @@ using UnityEngine;
 
 namespace Audio
 {
+    [RequireComponent(typeof(AudioSource))]
     public class AudioSpectrum : MonoBehaviour
     {
-        public static float SpectrumValue;
+        [HideInInspector] public float spectrumValue;
+
+        [SerializeField] private FFTWindow _fftWindow;
 
         private float[] _audioSpectrum;
 
@@ -16,11 +19,11 @@ namespace Audio
 
         private void Update()
         {
-            AudioListener.GetSpectrumData(_audioSpectrum, 0, FFTWindow.Hamming);
+            AudioListener.GetSpectrumData(_audioSpectrum, 0, _fftWindow);
 
             if (_audioSpectrum != null && _audioSpectrum.Length > 0)
             {
-                SpectrumValue = _audioSpectrum[0] * 100;
+                spectrumValue = _audioSpectrum[0] * 100;
             }
         }
     }

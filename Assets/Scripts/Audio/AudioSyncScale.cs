@@ -5,8 +5,10 @@ namespace Audio
 {
     public class AudioSyncScale : AudioSyncer
     {
-        public Vector3 beatScale;
-        public Vector3 restScale;
+        [SerializeField] private Vector3 beatScale;
+        [SerializeField] private Vector3 restScale;
+        [SerializeField] private float beatSmoothTime;
+        [SerializeField] private float restSmoothTime;
 
         private Coroutine _moveToScale;
 
@@ -14,12 +16,12 @@ namespace Audio
         {
             base.Update();
 
-            if (IsBeat) return;
+            if (_moveToScale != null) return;
 
-            transform.localScale = Vector3.Lerp(transform.localScale, restScale, restSmoothTime * Time.deltaTime);
+            transform.localScale = Vector3.Lerp(transform.localScale, restScale, Time.deltaTime / restSmoothTime);
         }
 
-        public override void OnBeat()
+        protected override void OnBeat()
         {
             base.OnBeat();
 
@@ -28,25 +30,25 @@ namespace Audio
                 StopCoroutine(_moveToScale);
             }
 
-            _moveToScale = StartCoroutine(MoveToScale(beatScale));
+            _moveToScale = StartCoroutine(MoveToScale());
         }
 
-        private IEnumerator MoveToScale(Vector3 target)
+        private IEnumerator MoveToScale()
         {
             Vector3 current = transform.localScale;
             Vector3 initial = current;
             float timer = 0;
 
-            while (current != target)
+            while (current != beatScale)
             {
-                current = Vector3.Lerp(initial, target, timer / timeToBeat);
+                current = Vector3.Lerp(initial, beatScale, timer / beatSmoothTime);
                 timer += Time.deltaTime;
 
                 transform.localScale = current;
                 yield return null;
             }
 
-            IsBeat = false;
+            _moveToScale = null;
         }
     }
 }

@@ -3,8 +3,8 @@
 
 <svg
    width="74.483231mm"
-   height="99.15062mm"
-   viewBox="0 0 74.483231 99.150618"
+   height="115.00011mm"
+   viewBox="0 0 74.483231 115.00011"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -32,9 +32,9 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:snap-page="true"
-     inkscape:zoom="2.1997092"
-     inkscape:cx="27.04903"
-     inkscape:cy="233.89455"
+     inkscape:zoom="1.5554293"
+     inkscape:cx="-51.111292"
+     inkscape:cy="366.77977"
      inkscape:window-width="2560"
      inkscape:window-height="1376"
      inkscape:window-x="0"
@@ -55,7 +55,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect846"
        width="20"
        height="20"
@@ -64,8 +64,13 @@
        inkscape:export-filename="/home/vincetiu8/Documents/github/mit-blueprint-2022/Assets/Sprites/path5365.png"
        inkscape:export-xdpi="199.93571"
        inkscape:export-ydpi="199.93571" />
+    <path
+       id="rect846-3-6"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:18.8976;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 33.070312,349.60547 v 23.62305 H 9.4492188 v 28.3457 H 33.070312 v 23.62305 h 28.347657 v -23.62305 h 23.621093 v -28.3457 H 61.417969 v -23.62305 z"
+       transform="scale(0.26458333)" />
     <circle
-       style="fill:#ff0015;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="path2131"
        cx="12.500007"
        cy="42.499996"
@@ -75,7 +80,7 @@
        inkscape:export-ydpi="199.93571" />
     <path
        sodipodi:type="star"
-       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:32.7317;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:32.7317;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="path3772"
        inkscape:flatsided="true"
        sodipodi:sides="3"
@@ -95,7 +100,7 @@
        inkscape:export-ydpi="199.93571" />
     <path
        sodipodi:type="star"
-       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:35.9454;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:35.9454;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="path5365"
        inkscape:flatsided="false"
        sodipodi:sides="5"
@@ -108,14 +113,14 @@
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="M 9.4488212,85.039372 -8.3235869,33.910435 -62.442068,32.807587 -19.307536,0.10531171 -34.982195,-51.705222 9.4488204,-20.787402 53.87983,-51.705224 38.205175,0.10531415 81.339708,32.807583 27.221223,33.910437 Z"
-       transform="matrix(0.13909969,0,0,0.13909969,55.927287,43.352263)"
-       inkscape:transform-center-y="1.0040571"
+       transform="matrix(0.10603565,0,0,0.10603565,52.141366,40.178425)"
+       inkscape:transform-center-y="0.76539211"
        inkscape:export-filename="/home/vincetiu8/Documents/github/mit-blueprint-2022/Assets/Sprites/path5365.png"
        inkscape:export-xdpi="199.93571"
        inkscape:export-ydpi="199.93571" />
     <path
        sodipodi:type="star"
-       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:35.9454;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:35.9454;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="path7413"
        inkscape:flatsided="true"
        sodipodi:sides="5"
@@ -134,7 +139,7 @@
        inkscape:export-xdpi="199.93571"
        inkscape:export-ydpi="199.93571" />
     <path
-       style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:4.99999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.99999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        d="m 56.830114,86.546992 -10.000001,5.773497 10,-17.3205 10,17.32051 z"
        id="path9394" />
   </g>
