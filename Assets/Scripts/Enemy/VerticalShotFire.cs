@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VerticalShotFire : MonoBehaviour
+public class VerticalshotFire : MonoBehaviour
 
 {
     [SerializeField] private int bulletAmount;
@@ -11,14 +11,14 @@ public class VerticalShotFire : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("SpreadFire", 0f, 0.3f);
+        InvokeRepeating("VerticalFire", 0f, 0.3f);
     }
 
-    private void SpreadFire()
+    private void VerticalFire()
     {
 
         float interval = bulletAmount;
-        
+
         for (int i = 0; i < bulletAmount + 1; i++)
         {
             float directionX = transform.position.x;
@@ -33,4 +33,4 @@ public class VerticalShotFire : MonoBehaviour
             bulletSpawn.GetComponent<Bullet>().SetDirection(bulletDirection);
         }
     }
-}
+} 
