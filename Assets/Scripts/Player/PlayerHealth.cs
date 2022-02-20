@@ -1,29 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+namespace Player
 {
-    [SerializeField] private int playerHealth;
-    [SerializeField] private GameObject gameOverPrefab;
-    [SerializeField] private Text timerText;
-    private int health;
-
-    private void Awake()
+    public class PlayerHealth : MonoBehaviour
     {
-        health = playerHealth;
-    }
+        [SerializeField] private int playerHealth;
+        [SerializeField] private GameObject gameOverPrefab;
+        [SerializeField] private Text timerText;
+    
+        private int _health;
 
-    public void ChangeHealth(int change)
-    {
-        health = health + change;
-        Debug.Log($"Health changed with value {change}!");
-        
-        if (health <= 0)
+        private void Awake()
         {
+            _health = playerHealth;
+        }
+
+        public void ChangeHealth(int change)
+        {
+            _health += change;
+
+            if (_health > 0) return;
+            
             Destroy(gameObject);
             Counter.CounterInstance.StopIncrement();
             timerText.text = Counter.CounterInstance.GetTime().ToString();
