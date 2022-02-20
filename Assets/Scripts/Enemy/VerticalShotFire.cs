@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VerticalshotFire : MonoBehaviour
+public class VerticalShotFire : MonoBehaviour
 
 {
     [SerializeField] private int bulletAmount;
