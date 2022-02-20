@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6409474690390600356}
   - component: {fileID: 3154432226072467257}
   - component: {fileID: 6965125000335472060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangle Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  lifetime: 10
+  lifetime: 5
 --- !u!212 &6409474690390600356
 SpriteRenderer:
   m_ObjectHideFlags: 0
