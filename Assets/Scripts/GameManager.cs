@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private int countdownTime;
     [SerializeField] private TMP_Text countdownText;
+    [SerializeField] private Camera cam;
 
     private ShooterController[] _shooterControllers;
     private AudioSource _audioSource;
@@ -21,10 +22,13 @@ public class GameManager : MonoBehaviour
 
         _audioSource = GetComponentInChildren<AudioSource>();
         _audioSource.Stop();
+    }
 
+    private void Start()
+    {
         _cameraDimensions =
-            new Vector2(Camera.main.orthographicSize * Camera.main.aspect, Camera.main.orthographicSize);
-        GameObject child = new GameObject
+            new Vector2(cam.orthographicSize * cam.aspect, cam.orthographicSize);
+        GameObject c = new GameObject
         {
             transform =
             {
@@ -32,7 +36,7 @@ public class GameManager : MonoBehaviour
             },
             layer = LayerMask.NameToLayer("Bullets")
         };
-        BoxCollider2D box = child.AddComponent<BoxCollider2D>();
+        BoxCollider2D box = c.AddComponent<BoxCollider2D>();
         box.size = new Vector2((_cameraDimensions.x + 1) * 2, 1);
         box.offset = new Vector2(0, _cameraDimensions.y + 0.5f);
         box = gameObject.AddComponent<BoxCollider2D>();
@@ -44,11 +48,7 @@ public class GameManager : MonoBehaviour
         box = gameObject.AddComponent<BoxCollider2D>();
         box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
         box.offset = new Vector2(-_cameraDimensions.x - 0.5f, 0);
-        Debug.Break();
-    }
-
-    private void Start()
-    {
+        
         GameObject empty = GameObject.FindGameObjectWithTag("Song");
         if (empty != null)
         {
