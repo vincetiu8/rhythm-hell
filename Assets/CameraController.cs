@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    private static CameraController _instance;
+
     [SerializeField] private Color color1, color2;
     [SerializeField] private float changeSpeed;
 
@@ -12,6 +14,12 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
+        if (_instance != null)
+        {
+            Destroy(gameObject);
+        }
+
+        _instance = this;
         _camera = GetComponent<Camera>();
         DontDestroyOnLoad(gameObject);
     }
