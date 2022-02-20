@@ -24,6 +24,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        GameObject empty = GameObject.FindGameObjectWithTag("Song");
+        _audioSource.clip = empty.GetComponent<AudioSource>().clip;
+        Destroy(empty);
         StartCoroutine(Countdown());
     }
 
