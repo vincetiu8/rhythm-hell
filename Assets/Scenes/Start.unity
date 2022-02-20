@@ -221,6 +221,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1269903211}
     m_Modifications:
+    - target: {fileID: 74538308, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 74538310, guid: b75a3602afed5ba37aec03746c681290, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -233,6 +237,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1061925814}
+    - target: {fileID: 74538311, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 74538311, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 599044519, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_text
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166708404556115896, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_text
+      value: Start
+      objectReference: {fileID: 0}
     - target: {fileID: 8290949637136756684, guid: b75a3602afed5ba37aec03746c681290, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 2
@@ -257,6 +277,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8866385019820051894, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866385019820051894, guid: b75a3602afed5ba37aec03746c681290, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9029665906068999080, guid: b75a3602afed5ba37aec03746c681290, type: 3}
       propertyPath: m_Name
       value: Start Menu
@@ -785,6 +813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Select Level Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7327516533400200245, guid: 4c75484594e9f638da2bb4f4440f5442, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8963343023642144887, guid: 4c75484594e9f638da2bb4f4440f5442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -869,7 +901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112395578, guid: 7948434f1b831dc46be4ab7a927bfc57, type: 3}
       propertyPath: m_text
-      value: 
+      value: Back
       objectReference: {fileID: 0}
     - target: {fileID: 1644618069, guid: 7948434f1b831dc46be4ab7a927bfc57, type: 3}
       propertyPath: m_AnchorMax.y
@@ -893,12 +925,12 @@ PrefabInstance:
       objectReference: {fileID: 642585009}
     - target: {fileID: 1816680041, guid: 7948434f1b831dc46be4ab7a927bfc57, type: 3}
       propertyPath: m_Type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816680041, guid: 7948434f1b831dc46be4ab7a927bfc57, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b59504c6e144d024494da86cc3cd52ab, type: 3}
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 9134869405033496408, guid: 7948434f1b831dc46be4ab7a927bfc57, type: 3}
       propertyPath: m_Name
       value: Options Menu
