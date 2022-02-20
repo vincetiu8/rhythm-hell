@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="readded the vertical shot">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs" afterDir="false" />
+    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="added graphics to main menu">
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/HowToPlayButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/HowToPlayButton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/MIT_title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/MIT_title.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/OptionsButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/OptionsButton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/StartButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/StartButton.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/bp_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/bp_logo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/Menu.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Menus/Start Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Menus/Start Menu.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +24,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="vertical_shot_readd" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/A Hunk of Metal/Documents/Coding/GitHub/mit-blueprint-2022/Assets/Scripts/Enemy/VerticalShotFire.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/A Hunk of Metal/Documents/Coding/GitHub/mit-blueprint-2022/Assets/Scripts/Enemy/VerticalShotFire.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/A Hunk of Metal/Documents/Coding/GitHub/mit-blueprint-2022/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/A Hunk of Metal/Documents/Coding/GitHub/mit-blueprint-2022/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/A Hunk of Metal/Documents/Coding/GitHub/mit-blueprint-2022/Assets/Scenes/Main.unity" root0="SKIP_HIGHLIGHTING" />
@@ -108,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1645364957612</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="misspelled">
+      <created>1645376145845</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1645376145845</updated>
+    </task>
+    <task id="LOCAL-00006" summary="misspelled">
+      <created>1645376177935</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1645376177935</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +164,8 @@
     <MESSAGE value="add options menu" />
     <MESSAGE value="fix buttons" />
     <MESSAGE value="readded the vertical shot" />
-    <option name="LAST_COMMIT_MESSAGE" value="readded the vertical shot" />
+    <MESSAGE value="misspelled" />
+    <MESSAGE value="added graphics to main menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="added graphics to main menu" />
   </component>
 </project>
