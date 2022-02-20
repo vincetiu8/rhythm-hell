@@ -110,21 +110,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9313ce56384033b8bcb56255f062ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biasIntervals:
-  - 10
-  - 22
-  - 34
-  - 46
-  - 58
   fftWindow: 1
-  timeBetweenBeats: 0.05
   projectilePrefabs:
-  - {fileID: 6861140987604769801, guid: a6f45a87384538b439151888c9262dc5, type: 3}
-  - {fileID: 6861140987604769801, guid: 53290fa09c5ab774a9c5911b916231ee, type: 3}
-  - {fileID: 6861140987604769801, guid: 5d341ee31fea066e8818c8616b2e7967, type: 3}
-  - {fileID: 6861140987604769801, guid: 0d82ad28d500bff46b5150c6c0c0c41e, type: 3}
-  - {fileID: 6861140987604769801, guid: 1a1dc6b63a9838d56a1eaa85c0dd33e9, type: 3}
-  - {fileID: 6861140987604769801, guid: 5d639b8b66728a3e997db031ef05a5ec, type: 3}
+  - {fileID: 3785807525509804568, guid: d61a624bfe0f9e55f9335539ac623dc8, type: 3}
+  - {fileID: 3785807525509804568, guid: 5249443d939ba9b5489c8dab0d8a98bf, type: 3}
+  - {fileID: 3785807525509804568, guid: 284015e9e8ae15e8e94d775c40357d5a, type: 3}
+  - {fileID: 3785807525509804568, guid: c3945d24cfdeae95b9b90e76ede32877, type: 3}
+  - {fileID: 3785807525509804568, guid: 3fc2bb2944b03a293b43bfc51d757107, type: 3}
+  - {fileID: 3785807525509804568, guid: 24474dce45371d8f695b4a4bbdace6b0, type: 3}
   bulletVelocities:
   - 7.5
   - 10
