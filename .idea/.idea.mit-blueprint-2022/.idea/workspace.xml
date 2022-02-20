@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs.meta" afterDir="false" />
+    <list default="true" id="5938f88f-83be-4f9b-84f4-eace5ef03438" name="Changes" comment="readded the vertical shot">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.mit-blueprint-2022/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/VerticalShotFire.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <workItem from="1645348824639" duration="3373000" />
       <workItem from="1645362637252" duration="1800000" />
       <workItem from="1645365778868" duration="1546000" />
-      <workItem from="1645372070211" duration="1164000" />
+      <workItem from="1645375127927" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1645333528984</created>
@@ -133,6 +132,7 @@
     <MESSAGE value="set up unity project" />
     <MESSAGE value="add options menu" />
     <MESSAGE value="fix buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix buttons" />
+    <MESSAGE value="readded the vertical shot" />
+    <option name="LAST_COMMIT_MESSAGE" value="readded the vertical shot" />
   </component>
 </project>
