@@ -4,11 +4,9 @@ namespace Enemy
 {
     public class DirectShotController : ShooterController
     {
-        protected override void OnBeat()
+        protected override void OnBeat(int beatPower)
         {
-            base.OnBeat();
-            
-            FireBullet(GetPlayerAngle());
+            FireBullet(GetPlayerAngle(), beatPower);
         }
     }
 }

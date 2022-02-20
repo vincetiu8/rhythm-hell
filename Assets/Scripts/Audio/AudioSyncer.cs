@@ -3,11 +3,12 @@ using UnityEngine;
 
 namespace Audio
 {
-    public class AudioSyncer : MonoBehaviour
+    public abstract class AudioSyncer : MonoBehaviour
     {
+        private readonly float[] _biasIntervals = { 20f, 30f, 40f, 50f, 60f, 70f };
+        private const float TimeBetweenBeats = 0.05f;
+
         [SerializeField] private FFTWindow fftWindow;
-        [SerializeField] private float bias;
-        [SerializeField] private float timeBetweenBeats;
 
         private float _previousAudioValue;
         private float _audioValue;
@@ -18,20 +19,31 @@ namespace Audio
             _previousAudioValue = _audioValue;
             _audioValue = AudioSpectrum.SpectrumValues[fftWindow];
 
-            if (_previousAudioValue > bias != _audioValue > bias)
-            {
-                if (_timer > timeBetweenBeats)
-                {
-                    OnBeat();
-                }
-            }
+            CheckBeat();
 
             _timer += Time.deltaTime;
         }
 
-        protected virtual void OnBeat()
+        private void CheckBeat()
         {
+            if (_timer < TimeBetweenBeats) return;
+
+            int i;
+            for (i = 0; i < _biasIntervals.Length; i++)
+            {
+                float bias = _biasIntervals[i];
+                if (_previousAudioValue > bias == _audioValue > bias)
+                {
+                    break;
+                }
+            }
+            
+            if (i == 0) return;
+            
+            OnBeat(i - 1);
             _timer = 0;
         }
+
+        protected abstract void OnBeat(int beatPower);
     }
 }

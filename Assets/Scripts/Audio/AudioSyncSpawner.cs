@@ -7,10 +7,8 @@ namespace Audio
     {
         [SerializeField] private GameObject objectPrefab;
 
-        protected override void OnBeat()
+        protected override void OnBeat(int beatPower)
         {
-            base.OnBeat();
-
             GameObject objectInstance = Instantiate(objectPrefab, transform.position, transform.rotation);
         }
     }

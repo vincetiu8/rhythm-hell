@@ -21,10 +21,8 @@ namespace Audio
             transform.localScale = Vector3.Lerp(transform.localScale, restScale, Time.deltaTime / restSmoothTime);
         }
 
-        protected override void OnBeat()
+        protected override void OnBeat(int beatPower)
         {
-            base.OnBeat();
-
             if (_moveToScale != null)
             {
                 StopCoroutine(_moveToScale);
