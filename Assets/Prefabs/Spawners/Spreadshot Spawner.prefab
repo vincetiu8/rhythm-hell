@@ -119,11 +119,11 @@ MonoBehaviour:
   - {fileID: 2972824395880890377, guid: 9542aea13ad99107a90f51e4cb1cc82a, type: 3}
   - {fileID: 2972824395880890377, guid: c09b13ba94ed1f027b17306e35b2a900, type: 3}
   bulletVelocities:
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  bulletAmount: 10
+  - 7.5
+  - 10
+  - 12.5
+  - 15
+  - 17.5
+  - 20
+  bulletAmount: 8
   spread: 180

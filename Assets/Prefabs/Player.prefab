@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d349d33cc3c5004b8a9835ac6541be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 100
+  initialHealth: 100
   gameOverPrefab: {fileID: 0}
   timerText: {fileID: 0}
+  healthBar: {fileID: 0}
+  regenHealthRate: 10
