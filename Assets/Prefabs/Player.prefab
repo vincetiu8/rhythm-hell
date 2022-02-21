@@ -331,3 +331,4 @@ MonoBehaviour:
   timerText: {fileID: 0}
   healthBar: {fileID: 0}
   regenHealthRate: 10
+  healthPopupPrefab: {fileID: 8146492984314319494, guid: 18789e7b0b2c7c296a825cdc37b51d38, type: 3}

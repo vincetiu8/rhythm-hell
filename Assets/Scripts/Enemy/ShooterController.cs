@@ -19,6 +19,7 @@ namespace Enemy
 
         private Vector2 GetPlayerDirection()
         {
+            if (Player == null) return Vector2.down;
             return Player.position - transform.position;
         }
 

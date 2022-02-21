@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
 
         _audioSource.clip = empty.GetComponent<AudioSource>().clip;
         Destroy(empty);
-        
+
         StartCoroutine(Countdown());
 
         foreach (Transform child in transform)
@@ -78,11 +78,13 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (_audioSource.isPlaying || !_songStarted) return;
-        
+
         menuManager.OpenMenu(endMenu);
         Counter.CounterInstance.StopIncrement();
         endText.text = "You Win!";
-        timerText.text = $"You survived {Counter.CounterInstance.GetTime().ToString()} minutes";
+        float minutes = Counter.CounterInstance.GetTime();
+        int seconds = (int)(minutes % 1 * 60);
+        timerText.text = $"You survived {((int)minutes).ToString()} minutes and {seconds} seconds";
         Destroy(playerPrefab);
     }
 
