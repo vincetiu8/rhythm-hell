@@ -1856,15 +1856,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 942608588105077110, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3862148483052495337, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3984402974924354449, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7834088535616761745, guid: ed9d286129db0052cac506e08050d37a, type: 3}
       propertyPath: m_IsActive

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8234362164098002619, guid: 4e20ab9f5ef03afad8aecf43557cc45a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1.97, y: 1.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &6919932377829497091
@@ -110,14 +110,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd2160baca0e494d95503ac81355de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fftWindow: 2
+  fftWindow: 4
   projectilePrefabs:
-  - {fileID: 3465902375732136185, guid: 1dc6f0c5c169c9707836d37c886285c6, type: 3}
-  - {fileID: 7637429184918061341, guid: 51771bed0ff899c939ab7c4b7a0f8c63, type: 3}
-  - {fileID: 7677154067618144499, guid: 5a60e3bc518e768cbbbe4bbafbd5666a, type: 3}
-  - {fileID: 2972824395880890377, guid: 4970d784313430a1cb8e24d58fe48e84, type: 3}
-  - {fileID: 2972824395880890377, guid: 9542aea13ad99107a90f51e4cb1cc82a, type: 3}
-  - {fileID: 2972824395880890377, guid: c09b13ba94ed1f027b17306e35b2a900, type: 3}
+  - {fileID: 2476979647652849337, guid: 89a2dca28940df0adb57059d49c17e21, type: 3}
+  - {fileID: 2476979647652849337, guid: 5f1dbba54ade56b02a75fe2461a64823, type: 3}
+  - {fileID: 2476979647652849337, guid: 2258c40099fb7afd9af133176e7a6863, type: 3}
+  - {fileID: 2476979647652849337, guid: 395513df39d2423d2a14bf20413a8a82, type: 3}
+  - {fileID: 2476979647652849337, guid: 03207889a28b3b6ec8daf0b81b35e8b1, type: 3}
+  - {fileID: 2476979647652849337, guid: ff5f1705ec3f8edb28d024cf68279ac5, type: 3}
   bulletVelocities:
   - 2
   - 3
@@ -127,4 +127,4 @@ MonoBehaviour:
   - 7
   bulletAmount: 10
   spread: 180
-  delay: 0.05
+  delay: 0.1

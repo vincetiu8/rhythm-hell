@@ -1,26 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
-using Enemy;
 using UnityEngine;
 
-public class RapidDirectShot : ShooterController
+namespace Enemy
 {
-    [SerializeField] private int bulletAmount = 10;
-    [SerializeField] private float fireDelay = 0.2f;
-    private Coroutine _fireCoroutine;
-    
-    protected override void OnBeat(int beatPower)
+    public class RapidDirectShot : ShooterController
     {
-        if (_fireCoroutine != null) StopCoroutine(_fireCoroutine);
-        _fireCoroutine = StartCoroutine(RapidFire(beatPower));
-    }
+        [SerializeField] private int bulletAmount = 10;
+        [SerializeField] private float fireDelay = 0.2f;
+        private Coroutine _fireCoroutine;
     
-    private IEnumerator RapidFire(int power)
-    {
-        for (int i = 0; i < bulletAmount; i++)
+        protected override void OnBeat(int beatPower)
         {
-            FireBullet(GetPlayerAngle(), power);
-            yield return new WaitForSeconds(fireDelay);
+            if (_fireCoroutine != null) StopCoroutine(_fireCoroutine);
+            _fireCoroutine = StartCoroutine(RapidFire(beatPower));
+        }
+    
+        private IEnumerator RapidFire(int power)
+        {
+            for (int i = 0; i < bulletAmount; i++)
+            {
+                FireBullet(GetPlayerAngle(), power);
+                yield return new WaitForSeconds(fireDelay);
+            }
         }
     }
 }
