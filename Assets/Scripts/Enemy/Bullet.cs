@@ -9,7 +9,7 @@ namespace Enemy
         [SerializeField] private int damage;
         [SerializeField] private float lifetime;
 
-        private void Start()
+        protected virtual void Start()
         {
             Invoke(nameof(Destroy), lifetime);
         }

@@ -198,5 +198,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  lifetime: 5
-  maxTurnSpeed: 360
+  lifetime: 2
+  maxTurnSpeed: 120

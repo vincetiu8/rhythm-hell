@@ -14,8 +14,14 @@ namespace Enemy
         private void Awake()
         {
             _player = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+            
             _rigidbody2D = GetComponent<Rigidbody2D>();
-            _velocity = 10;  //_rigidbody2D.velocity.magnitude;
+            _velocity = _rigidbody2D.velocity.magnitude;
         }
 
         private void FixedUpdate()

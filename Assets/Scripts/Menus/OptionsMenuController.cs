@@ -13,8 +13,7 @@ namespace Menus
         [SerializeField] private TMP_Dropdown resolutionDropdown;
         [SerializeField] private TMP_Dropdown fullScreenModeDropdown;
         [SerializeField] private Slider volumeSlider;
-        
-        
+
         private void Start()
         {
             resolutionDropdown.options.Clear();

@@ -5,6 +5,7 @@ namespace Audio
 {
     public class AudioSyncScale : AudioSyncer
     {
+        [SerializeField] private int beatIndex;
         [SerializeField] private Vector3 beatScale;
         [SerializeField] private Vector3 restScale;
         [SerializeField] private float beatSmoothTime;
@@ -23,6 +24,8 @@ namespace Audio
 
         protected override void OnBeat(int beatPower)
         {
+            if (beatPower != beatIndex) return;
+            
             if (_moveToScale != null)
             {
                 StopCoroutine(_moveToScale);

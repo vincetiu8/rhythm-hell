@@ -1,4 +1,6 @@
 using System;
+using Menus;
+using TMPro;
 using UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,8 +10,10 @@ namespace Player
     public class PlayerHealth : MonoBehaviour
     {
         [SerializeField] private int initialHealth;
-        [SerializeField] private GameObject gameOverPrefab;
-        [SerializeField] private Text timerText;
+        [SerializeField] private MenuManager _menuManager;
+        [SerializeField] private GameObject endMenu;
+        [SerializeField] private TMP_Text endText;
+        [SerializeField] private TMP_Text timerText;
         [SerializeField] private RectTransform healthBar;
         [SerializeField] private float regenHealthRate;
     
@@ -39,8 +43,9 @@ namespace Player
             if (_health > 0) return;
             Destroy(gameObject);
             Counter.CounterInstance.StopIncrement();
-            timerText.text = Counter.CounterInstance.GetTime().ToString();
-            gameOverPrefab.SetActive(true);
+            timerText.text = $"You survived {Counter.CounterInstance.GetTime().ToString()} minutes";
+            _menuManager.OpenMenu(endMenu);
+            endText.text = "You Lose";
         }
     }
 

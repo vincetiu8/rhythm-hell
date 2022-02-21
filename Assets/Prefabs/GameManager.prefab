@@ -65,7 +65,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownTime: 3
   countdownText: {fileID: 0}
-  cam: {fileID: 0}
+  menuManager: {fileID: 0}
+  endMenu: {fileID: 0}
+  endText: {fileID: 0}
+  timerText: {fileID: 0}
+  playerPrefab: {fileID: 0}
 --- !u!50 &2142242246
 Rigidbody2D:
   serializedVersion: 4
@@ -292,6 +296,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7947636920309639737}
     m_Modifications:
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[0]
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[1]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[2]
+      value: 22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[3]
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[4]
+      value: 27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
+      propertyPath: bulletVelocities.Array.data[5]
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7160578477030223424, guid: 5fd678e5e092169fd9f453d04b516701, type: 3}
       propertyPath: projectilePrefabs.Array.data[0]
       value: 

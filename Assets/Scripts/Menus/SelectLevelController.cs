@@ -45,4 +45,15 @@ public class SelectLevelController : MonoBehaviour
         DontDestroyOnLoad(empty);
         SceneManager.LoadSceneAsync("Main");
     }
+
+    public void OnVisualize()
+    {
+        GameObject empty = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        empty.tag = "Song";
+        AudioSource source = empty.AddComponent<AudioSource>();
+        source.Stop();
+        source.clip = songs[_currentSong];
+        DontDestroyOnLoad(empty);
+        SceneManager.LoadSceneAsync("Audio Testing");
+    }
 }
