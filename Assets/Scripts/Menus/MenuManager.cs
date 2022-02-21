@@ -7,24 +7,28 @@ namespace Menus
     {
         [SerializeField] private GameObject initialMenu;
 
-        private GameObject _currentMenu;
+        protected GameObject CurrentMenu;
 
-        private void Awake()
+        protected virtual void Awake()
         {
             if (initialMenu == null)
             {
                 Debug.LogError("No default menu set on open");
             }
 
-            _currentMenu = initialMenu;
-            _currentMenu.SetActive(true);
+            CurrentMenu = initialMenu;
+            CurrentMenu.SetActive(true);
         }
 
         public void OpenMenu(GameObject menu)
         {
-            _currentMenu.SetActive(false);
-            _currentMenu = menu;
-            _currentMenu.SetActive(true);
+            if (CurrentMenu != null)
+            {
+                CurrentMenu.SetActive(false);
+            }
+
+            CurrentMenu = menu;
+            CurrentMenu.SetActive(true);
         }
     }
 }

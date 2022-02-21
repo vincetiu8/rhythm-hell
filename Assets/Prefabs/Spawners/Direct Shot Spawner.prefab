@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7160578477030223424}
   m_Layer: 0
   m_Name: Direct Shot Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4630360869265889616, guid: 4e20ab9f5ef03afad8aecf43557cc45a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1.97, y: 1.97}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &7160578477030223487
@@ -112,16 +112,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fftWindow: 1
   projectilePrefabs:
-  - {fileID: 3785807525509804568, guid: d61a624bfe0f9e55f9335539ac623dc8, type: 3}
-  - {fileID: 3785807525509804568, guid: 5249443d939ba9b5489c8dab0d8a98bf, type: 3}
-  - {fileID: 3785807525509804568, guid: 284015e9e8ae15e8e94d775c40357d5a, type: 3}
-  - {fileID: 3785807525509804568, guid: c3945d24cfdeae95b9b90e76ede32877, type: 3}
-  - {fileID: 3785807525509804568, guid: 3fc2bb2944b03a293b43bfc51d757107, type: 3}
-  - {fileID: 3785807525509804568, guid: 24474dce45371d8f695b4a4bbdace6b0, type: 3}
+  - {fileID: 8653289426470851707, guid: ffb52b6190c5df97b9d9efa6ebc1dbb3, type: 3}
+  - {fileID: 8653289426470851707, guid: 17a5207bf19932aa7803e083c439f6d8, type: 3}
+  - {fileID: 8653289426470851707, guid: 0f30a963874141ee6823855f52dd5219, type: 3}
+  - {fileID: 8653289426470851707, guid: 05eb293212c1f786788be75ee40beeda, type: 3}
+  - {fileID: 8653289426470851707, guid: 010adef02ea90c20fbee90e2ee994239, type: 3}
+  - {fileID: 8653289426470851707, guid: 10876d8dc2b63a6c3b264da963ae09d7, type: 3}
   bulletVelocities:
-  - 7.5
-  - 10
-  - 12.5
-  - 15
   - 17.5
   - 20
+  - 22.5
+  - 25
+  - 27.5
+  - 30

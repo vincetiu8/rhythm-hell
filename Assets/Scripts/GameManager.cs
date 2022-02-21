@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using Enemy;
+using Menus;
 using TMPro;
 using UI;
 using UnityEngine;
@@ -12,8 +13,10 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private int countdownTime;
     [SerializeField] private TMP_Text countdownText;
-    [SerializeField] private GameObject winPrefab;
-    [SerializeField] private Text winText;
+    [SerializeField] private MenuManager menuManager;
+    [SerializeField] private GameObject endMenu;
+    [SerializeField] private TMP_Text endText;
+    [SerializeField] private TMP_Text timerText;
     [SerializeField] private GameObject playerPrefab;
 
     private ShooterController[] _shooterControllers;
@@ -44,8 +47,8 @@ public class GameManager : MonoBehaviour
         box.offset = new Vector2(0, _cameraDimensions.y + 0.5f);
         box = gameObject.AddComponent<BoxCollider2D>();
         box.size = new Vector2((_cameraDimensions.x + 1) * 2, 1);
-        box.offset = new Vector2(0, - _cameraDimensions.y - 0.5f);
-        box= gameObject.AddComponent<BoxCollider2D>();
+        box.offset = new Vector2(0, -_cameraDimensions.y - 0.5f);
+        box = gameObject.AddComponent<BoxCollider2D>();
         box.size = new Vector2(1, (_cameraDimensions.y + 1) * 2);
         box.offset = new Vector2(_cameraDimensions.x + 0.5f, 0);
         box = gameObject.AddComponent<BoxCollider2D>();
@@ -56,11 +59,10 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         GameObject empty = GameObject.FindGameObjectWithTag("Song");
-        if (empty != null)
-        {
-            _audioSource.clip = empty.GetComponent<AudioSource>().clip;
-            Destroy(empty);
-        }
+        if (empty == null) return;
+
+        _audioSource.clip = empty.GetComponent<AudioSource>().clip;
+        Destroy(empty);
 
         StartCoroutine(Countdown());
 
@@ -75,13 +77,15 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (!_audioSource.isPlaying && _songStarted)
-        {
-            winPrefab.SetActive(true);
-            Counter.CounterInstance.StopIncrement();
-            winText.text = Counter.CounterInstance.GetTime().ToString();
-            Destroy(playerPrefab);
-        }
+        if (_audioSource.isPlaying || !_songStarted) return;
+
+        menuManager.OpenMenu(endMenu);
+        Counter.CounterInstance.StopIncrement();
+        endText.text = "You Win!";
+        float minutes = Counter.CounterInstance.GetTime();
+        int seconds = (int)(minutes % 1 * 60);
+        timerText.text = $"You survived {((int)minutes).ToString()} minutes and {seconds} seconds";
+        Destroy(playerPrefab);
     }
 
     private IEnumerator Countdown()
@@ -94,7 +98,7 @@ public class GameManager : MonoBehaviour
             timer -= Time.deltaTime;
             yield return null;
         }
-        
+
         countdownText.gameObject.SetActive(false);
         ToggleSpawners(true);
         _audioSource.Play();

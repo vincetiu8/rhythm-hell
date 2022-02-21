@@ -14,7 +14,7 @@ namespace Audio
         private void Awake()
         {
             SpectrumValues = new Dictionary<FFTWindow, float>();
-            _audioSpectrum = new float[128];
+            _audioSpectrum = new float[64];
         }
 
         private void Update()
